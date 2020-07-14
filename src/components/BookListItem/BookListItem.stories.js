@@ -1,12 +1,12 @@
 import React from 'react';
-import { addDecorator } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
 import BookListItem from './BookListItem.js';
 
-addDecorator(withInfo);
-
-export default { title: 'BookListItem' };
+export default { 
+  title: 'BookListItem',
+  decorators: [withInfo]
+};
 
 export const Default = () => (
   <BookListItem 

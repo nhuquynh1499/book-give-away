@@ -1,0 +1,36 @@
+.UserListItem {
+  display: flex;
+  max-width: 700px;
+  border: 1px #686868 solid;
+  align-items: center;
+  padding: 10px;
+}
+
+.UserListItem .avatar {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.UserListItem .infor {
+  flex-grow: 2;
+  margin: 0px 10px;
+}
+
+.UserListItem .infor .name {
+  text-transform: uppercase;
+  padding: 5px 0px;
+}
+
+.UserListItem .infor .infor-content {
+  display: flex;
+  color: #686868;
+  width: 70%;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.UserListItem .delete img {
+  width: 24px;
+}
