@@ -1,3 +1,32 @@
+.BookListItem {
+  border: 1px #aaaaaa solid;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.BookListItem .image {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+}
+
+.BookListItem .infor {
+  margin-top: 30px;
+}
+
+.BookListItem .infor .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.BookListItem .infor .description {
+  font-size: 14px;
+  color: #343434;
+  width: 300px;
+  text-align: justify;
+}
 .UserListItem {
   display: flex;
   max-width: 700px;
@@ -26,15 +55,13 @@
 .UserListItem .infor .infor-content {
   display: flex;
   color: #686868;
+  width: 70%;
   justify-content: space-between;
   font-size: 14px;
 }
 
-.UserListItem .infor .infor-content .phone{
-  margin-right: 180px;
-}
-
 .UserListItem .delete img {
   width: 24px;
-  margin-right: 5px;
 }
+
+/*# sourceMappingURL=main.586425f4.chunk.css.map*/

@@ -1,11 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import './BookListItem.css';
 
-class BookListItem extends Component {
-  render() {
-    const { image, title, description } = this.props;
+const BookListItem = (props) => {
+    const { image, title, description } = props;
     return (
       <div className="BookListItem">
         <div 
@@ -20,7 +19,6 @@ class BookListItem extends Component {
       </div>
     )
   }
-}
 
 BookListItem.propTypes = {
   /** Book cover posters */
