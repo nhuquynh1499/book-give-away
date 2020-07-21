@@ -1,0 +1,42 @@
+.Header {
+  display: flex;
+  align-items: center;
+}
+
+.Header ul{
+  display: flex;
+  padding: 0px;
+}
+
+.Header ul li:hover a {
+  color: #333333;
+}
+
+.Header .active  {
+  border: 2px #FFC800 solid;
+  border-radius: 3px;
+}
+
+.Header .active a {
+  color: #FFC800;
+}
+
+.Header ul .active:hover a {
+  color: #FFC800;
+}
+
+.Header ul li {
+  list-style-type: none;
+  padding: 5px;
+  min-width: 50px;
+  margin-right: 5px;
+  text-align: center;
+  border: 2px #ffffff solid;
+}
+
+.Header ul li a {
+  text-decoration: none;
+  color: #CBCBCB;
+  text-transform: uppercase;
+  font-size: 14px;
+}
