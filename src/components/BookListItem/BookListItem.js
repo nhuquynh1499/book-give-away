@@ -4,17 +4,17 @@ import PropTypes from 'prop-types';
 import './BookListItem.css';
 
 const BookListItem = (props) => {
-    const { image, title, description } = props;
+    const { item } = props;
     return (
       <div className="BookListItem">
         <div 
           className="image"
-          style={{backgroundImage: `url(${image})`}}  
+          style={{backgroundImage: `url(${item.image})`}}  
         >
         </div>
         <div className="infor">
-          <div className="title">{title}</div>
-          <div className="description">{description}</div>
+          <div className="title">{item.title}</div>
+          <div className="description">{item.description}</div>
         </div>
       </div>
     )

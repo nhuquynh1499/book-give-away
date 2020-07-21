@@ -3,6 +3,7 @@
   display: inline-flex;
   flex-direction: column;
   padding: 15px;
+  margin: 10px;
 }
 
 .BookListItem .image {

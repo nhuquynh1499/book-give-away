@@ -6,18 +6,18 @@ import DeleteIcon from "../../images/delete.svg";
 import "./UserListItem.css";
 
 const UserListItem = (props) => {
-  const { avatar, name, email, phone } = props;
+  const { item } = props;
   return (
     <div className="UserListItem">
       <div
         className="avatar"
-        style={{ backgroundImage: `url(${avatar})` }}
+        style={{ backgroundImage: `url(${item.avatar})` }}
       ></div>
       <div className="infor">
-        <div className="name">{name}</div>
+        <div className="name">{item.name}</div>
         <div className="infor-content">
-          <div className="email">Email: {email}</div>
-          <div className="phone">Phone: {phone}</div>
+          <div className="email">Email: {item.email}</div>
+          <div className="phone">Phone: {item.phone}</div>
         </div>
       </div>
       <div className="delete">

@@ -1,9 +1,8 @@
 .UserListItem {
-  display: flex;
-  max-width: 700px;
-  border: 1px #686868 solid;
+  display: inline-flex;
   align-items: center;
   padding: 10px;
+  min-width: 700px;
 }
 
 .UserListItem .avatar {
@@ -35,6 +34,6 @@
 }
 
 .UserListItem .delete img {
-  width: 24px;
+  width: 15px;
   margin-right: 5px;
 }
