@@ -24,7 +24,7 @@ export class CartProvider extends Component {
       <CartContext.Provider 
         value={{
           cartItems: this.state.cartItems,
-          addToCart: this.state.addToCart
+          addToCart: this.addToCart
       }}>
         { this.props.children }
       </CartContext.Provider>
