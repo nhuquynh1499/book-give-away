@@ -33,6 +33,12 @@ function Header(props) {
         >
           <Link to="/user">User</Link>
         </li>
+        <li 
+          onClick={toggle} 
+          className={isActive === "/user" ? "active" : null}
+        >
+          <Link to="/user">Cart</Link>
+        </li>
       </ul>
     </div>
   );

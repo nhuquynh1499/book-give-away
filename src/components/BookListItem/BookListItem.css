@@ -16,10 +16,25 @@
   margin-top: 30px;
 }
 
+.BookListItem .infor .infor-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.BookListItem .infor .infor-content button {
+  background-color: #FFC800;
+  padding: 7px 12px;
+  border: 0px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
 .BookListItem .infor .title {
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 10px;
+
 }
 
 .BookListItem .infor .description {
