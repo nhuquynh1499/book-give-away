@@ -16,7 +16,7 @@ export default class Book extends Component {
   }
 
   componentDidMount() {
-    axios.get(`http://localhost:8080/books`)
+    axios.get(`http://localhost:8000/api/book`)
     .then(res => {
       const books = res.data;
       this.setState({ books });

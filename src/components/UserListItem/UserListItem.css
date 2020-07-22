@@ -29,11 +29,8 @@
   font-size: 14px;
 }
 
-.UserListItem .infor .infor-content .phone{
-  margin-right: 180px;
-}
-
 .UserListItem .delete img {
   width: 15px;
   margin-right: 5px;
+  margin-left: 70px;
 }

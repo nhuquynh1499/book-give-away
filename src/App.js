@@ -8,36 +8,14 @@ import {
 import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import Book from "./pages/Book/Book";
+import CreateBook from "./pages/Book/CreateBook";
 import User from "./pages/User/User";
+import SignUp from "./pages/SignUp/SignUp";
+import SignIn from "./pages/SignIn/SignIn";
 import { CartProvider } from "./contexts/Cart";
 import "./App.css";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      users: [
-        {
-          avatar: "https://picsum.photos/400",
-          name: "Hello World",
-          email: "abc@expamble.com",
-          phone: "0123123123",
-        },
-        {
-          avatar: "https://picsum.photos/400",
-          name: "Hello World",
-          email: "abc@expamble.com",
-          phone: "0123123123",
-        },
-        {
-          avatar: "https://picsum.photos/400",
-          name: "Hello World",
-          email: "abc@expamble.com",
-          phone: "0123123123",
-        },
-      ],
-    };
-  }
   render() {
     return (
       <CartProvider>
@@ -49,12 +27,22 @@ class App extends Component {
                 <Route path="/book">
                   <Book />
                 </Route>
+                <Route path="/add-book">
+                  <CreateBook />
+                </Route>
                 <Route path="/user">
-                  <User data={this.state.users} />
+                  <User />
+                </Route>
+                <Route path="/signup">
+                  <SignUp />
+                </Route>
+                <Route path="/signin">
+                  <SignIn />
                 </Route>
                 <Route path="/" extact>
                   <Home />
                 </Route>
+                
               </Switch>
             </div>
           </div>
